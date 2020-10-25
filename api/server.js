@@ -6,6 +6,7 @@ const eventRouter = require('../events/events-router');
 
 const app = express();
 
+app.use(express.json());
 app.use(helmet());
 app.use(cors());
 
