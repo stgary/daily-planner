@@ -1,2 +1,2 @@
-# habitviz-version2
-schedular, habit tracker and data visualization. (MongoDB Express React Node) 
+# Daily Planner
+schedular and data visualization. (MongoDB Express React Node) 
