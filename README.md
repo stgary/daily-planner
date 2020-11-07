@@ -1,2 +1,2 @@
 # Daily Planner
-schedular and data visualization. (MongoDB Express React Node) 
+schedular and data visualization. (PostgreSQL Express React Node) 

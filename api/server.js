@@ -2,7 +2,7 @@ const express = require('express');
 const helmet = require('helmet');
 const cors = require('cors');
 
-const eventRouter = require('../events/events-router');
+const eventsRouter = require('../events/events-router');
 
 const app = express();
 
