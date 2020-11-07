@@ -4,5 +4,6 @@ module.exports = {
   DATABASE: process.env.DATABASE || 'DBPLAN',
   DB_PASS: process.env.DB_PASS || 'j233ancigp3po',
   DB_USER: process.env.DB_USER || 'postgres',
-  ENVIRONMENT: process.env.DB_ENV || "production"
+  ENVIRONMENT: process.env.DB_ENV || "production",
+  BCRYPT_ROUNDS: process.env.BCRYPT_ROUNDS || 10,
 }
