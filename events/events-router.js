@@ -8,7 +8,7 @@ router.post('/', (req, res) => {
       res.status(201).json(dbRes);
     })
     .catch(error => {
-      res.status(500).json(error.message);
+      res.status(500).json({ message: 'This is where its failing' });
     });
 });
 

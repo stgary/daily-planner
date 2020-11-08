@@ -1,5 +1,9 @@
+@import '../../node_modules/react-big-calendar/lib/sass/styles.scss';
+
 @import './partials/reset';
 @import './partials/globals';
 @import './partials/variables';
 
 @import './module/calendar';
+@import './module/home';
+@import './module/sign';
