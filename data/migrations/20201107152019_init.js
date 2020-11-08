@@ -6,8 +6,8 @@ exports.up = function(knex) {
       
       tbl.boolean('allDay').defaultTo(false);
 
-      tbl.date('start').notNullable();
-      tbl.date('end').notNullable();
+      tbl.string('start').notNullable();
+      tbl.string('end').notNullable();
 
       tbl.string('title', 128).notNullable();
       tbl.string('description', 256);

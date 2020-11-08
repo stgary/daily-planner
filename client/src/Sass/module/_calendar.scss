@@ -1,0 +1,158 @@
+.cal {
+  height: 100%;
+  width: 100%;
+
+  .cal-outer-container {
+    height: 100%;
+    width: 100%;
+
+    .cal-inner-container {
+      height: 100%;
+      width: 100%;
+
+      .rbc-header {
+        font-size: 2.25rem;
+        font-weight: 500;
+        font-family: $Sans;
+      }
+
+      .rbc-month-header {
+        background-color: #23524b85;
+        color: $MintCream;
+        font-family: $Sans;
+        height: 5vh;
+      }
+
+      .rbc-date-cell {
+        font-size: 1.5rem;
+        color: $LightGrey;
+      }
+
+      .rbc-toolbar-label {
+        font-size: 3.25rem;
+        font-family: $Sans; 
+        color: #b1b1b1a8;
+      }
+
+      .rbc-toolbar {
+        margin: 0;
+      }
+
+      .rbc-btn-group {
+        margin: 0px 10px 0px 10px;
+      }
+
+      .rbc-current-time-indicator {
+        height: 2px;
+        background-color: #a8a8a8;
+        pointer-events: none;
+      }
+
+      .rbc-events-container {
+        margin-right: 0px;
+      }
+
+      .rbc-event {
+        background-color: #7b90749e;
+        font-size: 1.25rem;
+        color: $MintCream;
+        border-radius: 0px;
+        border: 1px solid $MintCream;
+        width: 100%;
+      }
+
+      .rbc-event-label {
+        font-size: 1.25rem;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .rbc-event-content {
+        font-size: 1.5rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .rbc-time-header-cell {
+        height: 6vh;
+        font-size: 1.25rem;
+        color: $MintCream;
+        background-color: #23524b85; 
+      }
+
+      .rbc-today {
+        color: $LightGrey;
+      }
+
+      .rbc-time-header-gutter {
+        background-color: #23524b85;
+      }
+
+      .rbc-time-gutter {
+        font-size: 1.25rem;
+        font-family: $Sans;
+        color: $MintCream;
+        background-color: #23524b85;
+      }
+
+      .rbc-agenda-content {
+        width: 100%;
+        font-size: 2rem;
+        font-family: $Sans;
+        font-weight:200;
+      }
+
+      .rbc-agenda-empty {
+        font-size: 3rem;
+        margin-left: 15px;
+        font-family: $Sans;
+        font-weight: 600;
+        color: #b1b1b1a8;
+      }
+
+      .rbc-agenda-table {
+        color: $LightGrey;
+      }
+
+
+      button {
+        width: 115px;
+        height: 4vh;
+        font-family: $Sans;
+        background: #f3f0f1;
+        position: relative;
+        margin: 10px 6px 10px 0px;
+        border-radius: 20px;
+        text-align: center;
+        cursor: pointer;
+        transition: all 0.1s ease-in-out;
+        box-shadow: inset -4px -4px 8px rgba(255, 255, 255, 0.5),
+                    inset 8px 8px 16px rgba(0, 0, 0, 0.1);
+        color: $LightGrey;
+        outline: none;
+        
+        &:hover {
+          opacity: 1;
+          box-shadow: -6px -6px 10px rgba(255, 255, 255, 0.8),
+            6px 6px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        &:active {
+          opacity: 1;
+          box-shadow: inset -4px -4px 8px rgba(255, 255, 255, 0.5),
+                      inset 8px 8px 16px rgba(0, 0, 0, 0.1);
+          border: none;
+        }
+      
+        span {
+          line-height: 100px;
+          font-size: 32px;
+          font-weight: semibold;
+        }
+      }
+    }
+  }
+}

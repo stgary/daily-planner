@@ -1,9 +1,15 @@
 import React from 'react';
+import { Route } from 'react-router-dom';
+
+import Home from './Home';
+import Calendar from './Calendar'
+import PrivateRoute from './PrivateRoute';
 
 function App() {
   return (
-    <div className="App">
-      <h1>Hello World!</h1>
+    <div className="app">
+      <Route exact path='/' component={Home} />
+      <PrivateRoute path='/calendar' component={Calendar} />
     </div>
   );
 }

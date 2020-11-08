@@ -2,7 +2,8 @@ const { DB_USER, DB_PASS, DATABASE } = require('./config');
 
 module.exports = {
 
-  development: {
+  production: {
+    useNullAsDefault: true,
     client: 'sqlite3',
     connection: {
       filename: 'data/DBPLAN.db3'
@@ -31,7 +32,7 @@ module.exports = {
     },
   },
 
-  production: {
+  development: {
     client: 'postgresql',
     useNullAsDefault: true,
     connection: {
