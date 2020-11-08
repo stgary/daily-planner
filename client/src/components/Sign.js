@@ -43,6 +43,20 @@ export default function Contact() {
 
   return (
     <div className='sign'>
+      <div className='tabs'>
+        <button 
+          className='tab' 
+          onClick={() => setView(!view)}
+        >
+          Sign In
+        </button>
+        <button 
+          className='tab' 
+          onClick={() => setView(!view)}
+        >
+          Sign Up
+        </button>
+      </div>
       <div className='sign-container'>
         {!view && 
           <div className='login-form'>
@@ -53,7 +67,6 @@ export default function Contact() {
                 placeholder='Your username...'
                 ref={register({ required: true })}
               />
-              <p className='error'>{errors.name && 'Username is a required field!'}</p>
 
               <input
                 name='password'
@@ -61,14 +74,17 @@ export default function Contact() {
                 placeholder='Your password...'
                 ref={register({ required: true })}
               />
+
+              <p className='error'>{errors.name && 'Username is a required field!'}</p>
               <p className='error'>{errors.name && 'Password is a required field!'}</p>
 
               <div className='btn-container'>
                 <button
+                  className='submit'
                   name='send'
                   type='submit'
                 >
-                  Sign In
+                  Submit
                 </button>
               </div>
             </form>
@@ -84,7 +100,6 @@ export default function Contact() {
                 placeholder='Your name...'
                 ref={register({ required: true })}
               />
-              <p className='error'>{errors.name && 'Name is a required field!'}</p>
               
               <input
                 name='username'
@@ -92,7 +107,6 @@ export default function Contact() {
                 placeholder='Your username...'
                 ref={register({ required: true })}
               />
-              <p className='error'>{errors.name && 'Username is a required field!'}</p>
 
               <input
                 name='email'
@@ -100,7 +114,6 @@ export default function Contact() {
                 placeholder='Your email...'
                 ref={register({ required: true })}
               />
-              <p className='error'>{errors.email && 'Email is a required field!'}</p>
 
               <input
                 name='password'
@@ -108,22 +121,25 @@ export default function Contact() {
                 placeholder='Your password...'
                 ref={register({ required: true })}
               />
-              <p className='error'>{errors.name && 'Password is a required field!'}</p>
 
               <div className='btn-container'>
                 <button
+                  className='send'
                   name='send'
                   type='submit'
                 >
-                  Sign Up
+                  Submit
                 </button>
               </div>
+              
+              <p className='error'>{errors.name && 'Username is a required field!'}</p>
+              <p className='error'>{errors.email && 'Email is a required field!'}</p>
+              <p className='error'>{errors.name && 'Name is a required field!'}</p>
+              <p className='error'>{errors.name && 'Password is a required field!'}</p>
+
             </form>
           </div>
         }
-        <div className='sign-up'>
-          <span onClick={() => setView(!view)}>Don't have an account? Click here to register!</span>
-        </div>
       </div>
     </div>
   )
