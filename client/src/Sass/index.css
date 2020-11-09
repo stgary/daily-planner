@@ -1162,22 +1162,46 @@ html, body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
   height: 100%;
-  padding: 2%;
+  background-image: url("../img/cal3.jpg");
+  background-position: left;
+  background-repeat: no-repeat;
 }
 
-.home .info-form-container .wrapper {
+.home .info-form-container .kti {
+  width: 65%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.home .info-form-container .kti p {
+  font-size: 5rem;
+  color: #969696;
+  font-family: "Source Sans Pro", sans-serif;
+  font-weight: 700;
+}
+
+.home .info-form-container .info-form-wrapper {
+  width: 60%;
+  margin: -1% 2% 4% 0%;
+}
+
+.home .info-form-container .info-form-wrapper .wrapper {
   width: 100%;
   margin-top: 2%;
 }
 
-.home .info-form-container .info {
+.home .info-form-container .info-form-wrapper .info {
   font-size: 3rem;
   color: #b1b1b1a8;
   font-weight: 900;
@@ -1198,8 +1222,8 @@ html, body {
   margin-top: 4%;
 }
 
-.home .info-form-container .info p {
-  margin-bottom: 3%;
+.home .info-form-container .info-form-wrapper .info p {
+  margin-bottom: 1%;
 }
 
 .sign {
@@ -1218,7 +1242,7 @@ html, body {
 }
 
 .sign .tabs .tab {
-  width: 18%;
+  width: 30%;
   height: 5vh;
   font-family: "Source Sans Pro", sans-serif;
   font-size: 1.75rem;
@@ -1275,7 +1299,7 @@ html, body {
 }
 
 .sign .sign-container .login-form form {
-  width: 36%;
+  width: 60%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1382,7 +1406,7 @@ html, body {
 }
 
 .sign .sign-container .register-form form {
-  width: 36%;
+  width: 60%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
