@@ -3,7 +3,7 @@ import { Route } from 'react-router-dom';
 
 import Home from './Home';
 import Calendar from './Calendar'
-import PrivateRoute from './PrivateRoute';
+// import PrivateRoute from './PrivateRoute';
 
 function App() {
   return (
