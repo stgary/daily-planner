@@ -1084,4 +1084,397 @@ html, body {
   font-size: 32px;
   font-weight: semibold;
 }
+
+.home {
+  height: 100%;
+  width: 100%;
+}
+
+.home header {
+  height: 5vh;
+  background-color: #23524b85;
+  -webkit-box-shadow: inset 0px 0px 20px 0px #042b1f3f, 0px 9px 6px 6px #0000001a;
+          box-shadow: inset 0px 0px 20px 0px #042b1f3f, 0px 9px 6px 6px #0000001a;
+  padding-bottom: 5px;
+}
+
+.home header nav {
+  height: 100%;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.home header nav .cal {
+  font-size: 3rem;
+  font-weight: 700;
+  font-family: "Source Sans Pro", sans-serif;
+  margin: 1% 1% 0% 1%;
+  color: #f0f7f4;
+}
+
+.home header nav button {
+  width: 115px;
+  height: 4vh;
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 1.75rem;
+  font-weight: 600;
+  background: #f3f0f1;
+  position: relative;
+  margin: 10px 6px 10px 0px;
+  border-radius: 20px;
+  text-align: center;
+  cursor: pointer;
+  -webkit-transition: all 0.1s ease-in-out;
+  transition: all 0.1s ease-in-out;
+  -webkit-box-shadow: 2px 3px 12px 0px #726f6f80, inset 8px 8px 16px #87878763;
+          box-shadow: 2px 3px 12px 0px #726f6f80, inset 8px 8px 16px #87878763;
+  color: #b1b1b1;
+  outline: none;
+  border: 1px solid #b1b1b1;
+}
+
+.home header nav button:hover {
+  opacity: 1;
+  -webkit-box-shadow: -2px -2px 6px rgba(18, 66, 62, 0.123), 2px 2px 6px rgba(11, 109, 63, 0.123);
+          box-shadow: -2px -2px 6px rgba(18, 66, 62, 0.123), 2px 2px 6px rgba(11, 109, 63, 0.123);
+}
+
+.home header nav button:active {
+  opacity: 1;
+  -webkit-box-shadow: inset -4px -4px 8px rgba(255, 255, 255, 0.5), inset 8px 8px 16px rgba(0, 0, 0, 0.1);
+          box-shadow: inset -4px -4px 8px rgba(255, 255, 255, 0.5), inset 8px 8px 16px rgba(0, 0, 0, 0.1);
+  border: none;
+}
+
+.home .info-form-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100%;
+  padding: 2%;
+}
+
+.home .info-form-container .wrapper {
+  width: 100%;
+  margin-top: 2%;
+}
+
+.home .info-form-container .info {
+  font-size: 3rem;
+  color: #b1b1b1a8;
+  font-weight: 900;
+  font-family: "Source Sans Pro", sans-serif;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 4%;
+}
+
+.home .info-form-container .info p {
+  margin-bottom: 3%;
+}
+
+.sign {
+  width: 100%;
+  height: 100%;
+}
+
+.sign .tabs {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.sign .tabs .tab {
+  width: 18%;
+  height: 5vh;
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 1.75rem;
+  font-weight: 600;
+  background: #f3f0f1;
+  position: relative;
+  margin: 10px 0px 0px 0px;
+  text-align: center;
+  cursor: pointer;
+  -webkit-transition: all 0.1s ease-in-out;
+  transition: all 0.1s ease-in-out;
+  -webkit-box-shadow: 2px 3px 12px 0px #726f6f80, inset 8px 8px 16px #87878763;
+          box-shadow: 2px 3px 12px 0px #726f6f80, inset 8px 8px 16px #87878763;
+  color: #b1b1b1;
+  outline: none;
+  border: 1px solid #b1b1b1;
+}
+
+.sign .tabs .tab:hover {
+  opacity: 1;
+  background-color: #23524b7a;
+  color: #f0f7f4;
+  -webkit-box-shadow: inset 0px 0px 20px 0px #042b1f3f, 0px 9px 6px 6px #0000001a;
+          box-shadow: inset 0px 0px 20px 0px #042b1f3f, 0px 9px 6px 6px #0000001a;
+}
+
+.sign .tabs .tab:active {
+  opacity: 1;
+  -webkit-box-shadow: inset -4px -4px 8px rgba(255, 255, 255, 0.212), inset 8px 8px 16px rgba(0, 0, 0, 0.1);
+          box-shadow: inset -4px -4px 8px rgba(255, 255, 255, 0.212), inset 8px 8px 16px rgba(0, 0, 0, 0.1);
+  border: none;
+}
+
+.sign .sign-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.sign .sign-container .login-form {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.sign .sign-container .login-form form {
+  width: 36%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #b1b1b118;
+}
+
+.sign .sign-container .login-form form input {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 1% 0 0 0;
+  display: inline-block;
+  border: 1px solid #b1b1b1;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background-color: #f0f7f4;
+  border-radius: 4px;
+}
+
+.sign .sign-container .login-form form input:focus {
+  outline: none !important;
+  border: 2px solid #23524b85;
+}
+
+.sign .sign-container .login-form form input::-webkit-input-placeholder {
+  color: #b1b1b1;
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+.sign .sign-container .login-form form input:-ms-input-placeholder {
+  color: #b1b1b1;
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+.sign .sign-container .login-form form input::-ms-input-placeholder {
+  color: #b1b1b1;
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+.sign .sign-container .login-form form input::placeholder {
+  color: #b1b1b1;
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+.sign .sign-container .login-form form .btn-container button {
+  width: 125px;
+  height: 4.5vh;
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 1.75rem;
+  font-weight: 600;
+  background: #f3f0f1;
+  position: relative;
+  margin: 10px 6px 10px 0px;
+  border-radius: 20px;
+  text-align: center;
+  cursor: pointer;
+  -webkit-transition: all 0.1s ease-in-out;
+  transition: all 0.1s ease-in-out;
+  -webkit-box-shadow: 2px 3px 12px 0px #726f6f80, inset 8px 8px 16px #87878763;
+          box-shadow: 2px 3px 12px 0px #726f6f80, inset 8px 8px 16px #87878763;
+  color: #b1b1b1;
+  outline: none;
+  border: 1px solid #b1b1b1;
+}
+
+.sign .sign-container .login-form form .btn-container button:hover {
+  opacity: 1;
+  -webkit-box-shadow: -2px -2px 6px rgba(18, 66, 62, 0.123), 2px 2px 6px rgba(11, 109, 63, 0.123);
+          box-shadow: -2px -2px 6px rgba(18, 66, 62, 0.123), 2px 2px 6px rgba(11, 109, 63, 0.123);
+}
+
+.sign .sign-container .login-form form .btn-container button:active {
+  opacity: 1;
+  -webkit-box-shadow: inset -4px -4px 8px rgba(255, 255, 255, 0.5), inset 8px 8px 16px rgba(0, 0, 0, 0.1);
+          box-shadow: inset -4px -4px 8px rgba(255, 255, 255, 0.5), inset 8px 8px 16px rgba(0, 0, 0, 0.1);
+  border: none;
+}
+
+.sign .sign-container .register-form {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.sign .sign-container .register-form form {
+  width: 36%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #b1b1b118;
+}
+
+.sign .sign-container .register-form form input {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 1% 0 0 0;
+  display: inline-block;
+  border: 1px solid #b1b1b1;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background-color: #f0f7f4;
+  border-radius: 4px;
+}
+
+.sign .sign-container .register-form form input:focus {
+  outline: none !important;
+  border: 2px solid #23524b85;
+}
+
+.sign .sign-container .register-form form input::-webkit-input-placeholder {
+  color: #b1b1b1;
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+.sign .sign-container .register-form form input:-ms-input-placeholder {
+  color: #b1b1b1;
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+.sign .sign-container .register-form form input::-ms-input-placeholder {
+  color: #b1b1b1;
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+.sign .sign-container .register-form form input::placeholder {
+  color: #b1b1b1;
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+.sign .sign-container .register-form form .btn-container button {
+  width: 125px;
+  height: 4.5vh;
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 1.75rem;
+  font-weight: 600;
+  background: #f3f0f1;
+  position: relative;
+  margin: 10px 6px 10px 0px;
+  border-radius: 20px;
+  text-align: center;
+  cursor: pointer;
+  -webkit-transition: all 0.1s ease-in-out;
+  transition: all 0.1s ease-in-out;
+  -webkit-box-shadow: 2px 3px 12px 0px #726f6f80, inset 8px 8px 16px #87878763;
+          box-shadow: 2px 3px 12px 0px #726f6f80, inset 8px 8px 16px #87878763;
+  color: #b1b1b1;
+  outline: none;
+  border: 1px solid #b1b1b1;
+}
+
+.sign .sign-container .register-form form .btn-container button:hover {
+  opacity: 1;
+  -webkit-box-shadow: -2px -2px 6px rgba(18, 66, 62, 0.123), 2px 2px 6px rgba(11, 109, 63, 0.123);
+          box-shadow: -2px -2px 6px rgba(18, 66, 62, 0.123), 2px 2px 6px rgba(11, 109, 63, 0.123);
+}
+
+.sign .sign-container .register-form form .btn-container button:active {
+  opacity: 1;
+  -webkit-box-shadow: inset -4px -4px 8px rgba(255, 255, 255, 0.5), inset 8px 8px 16px rgba(0, 0, 0, 0.1);
+          box-shadow: inset -4px -4px 8px rgba(255, 255, 255, 0.5), inset 8px 8px 16px rgba(0, 0, 0, 0.1);
+  border: none;
+}
 /*# sourceMappingURL=index.css.map */

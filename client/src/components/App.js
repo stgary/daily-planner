@@ -3,13 +3,13 @@ import { Route } from 'react-router-dom';
 
 import Home from './Home';
 import Calendar from './Calendar'
-import PrivateRoute from './PrivateRoute';
+// import PrivateRoute from './PrivateRoute';
 
 function App() {
   return (
     <div className="app">
       <Route exact path='/' component={Home} />
-      <PrivateRoute path='/calendar' component={Calendar} />
+      <Route exact path='/calendar' component={Calendar} />
     </div>
   );
 }
