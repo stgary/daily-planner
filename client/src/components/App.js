@@ -7,6 +7,15 @@ import Calendar from './Calendar'
 
 function App() {
   const [user, setUser] = useState(false)
+  const id = window.localStorage.getItem('id')
+  const name = window.localStorage.getItem('name')
+
+  if(!user) {
+    if(id && name) {
+      setUser({ id: id, name: name })
+    }
+  }
+
   console.log(user)
   return (
     <div className="app">

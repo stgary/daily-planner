@@ -11,8 +11,8 @@ export default function Cal({ user, setUser }) {
   const [events, setEvents] = useState([]);
   const history = useHistory();
 
-  const POST_EVENT = process.env.POST_URL || 'http://localhost:5000/events';
-  const GET_EVENTS = process.env.POST_URL || `http://localhost:5000/events/${user.id}`;
+  const POST_EVENT = 'http://localhost:5000/events';
+  const GET_EVENTS = `http://localhost:5000/events/${user.id}`;
 
   useEffect(() => {
       axios
@@ -73,6 +73,8 @@ export default function Cal({ user, setUser }) {
 
   const signOut = () => {
     window.localStorage.removeItem('token');
+    window.localStorage.removeItem('id');
+    window.localStorage.removeItem('name');
     setUser(false);
     history.push('/');
   }

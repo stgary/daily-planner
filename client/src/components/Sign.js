@@ -16,6 +16,8 @@ export default function Contact({ setUser }) {
       .post(POST_LOGIN, data)
         .then(res => {
           window.localStorage.setItem('token', res.data.token);
+          window.localStorage.setItem('id', res.data.id);
+          window.localStorage.setItem('name', res.data.name);
           setUser({ id: res.data.id, name: res.data.name })
           history.push('/calendar');
         })
@@ -31,6 +33,8 @@ export default function Contact({ setUser }) {
       .post(POST_REGISTER, data)
         .then(res => {
           window.localStorage.setItem('token', res.data.token);
+          window.localStorage.setItem('id', res.data.id);
+          window.localStorage.setItem('name', res.data.name);
           setUser({ id: res.data.id, name: res.data.name })
           history.push('/calendar');
         })
