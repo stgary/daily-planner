@@ -1,6 +1,57 @@
-.cal {
-  height: 100%;
+.calendar {
+  height: 96vh;
   width: 100%;
+
+  header {
+    height: 4vh;
+
+    nav {
+      display: flex;
+      justify-content: center;
+
+      .isUser {
+
+        span {
+          font-size: 3rem;
+          font-family: $Sans;
+          color: $LightGrey;
+          margin: 10px;
+        }
+
+        button {
+          width: 115px;
+          height: 4vh;
+          font-family: $Sans;
+          font-size: 1.75rem;
+          font-weight: 600;
+          background: #f3f0f1;
+          position: relative;
+          margin: 10px 6px 10px 0px;
+          border-radius: 20px;
+          text-align: center;
+          cursor: pointer;
+          transition: all 0.1s ease-in-out;
+          box-shadow: 2px 3px 12px 0px #726f6f80, inset 8px 8px 16px #87878763;
+          color: $LightGrey;
+          outline: none;
+          border: 1px solid $LightGrey;
+          
+          &:hover {
+            opacity: 1;
+            box-shadow: -2px -2px 6px rgba(18, 66, 62, 0.123),
+              2px 2px 6px rgba(11, 109, 63, 0.123);
+          }
+
+          &:active {
+            opacity: 1;
+            box-shadow: inset -4px -4px 8px rgba(255, 255, 255, 0.5),
+                        inset 8px 8px 16px rgba(0, 0, 0, 0.1);
+            border: none;
+          }
+        }
+      }
+    }
+  }
 
   .cal-outer-container {
     height: 100%;

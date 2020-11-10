@@ -6,7 +6,7 @@ import axios from 'axios';
 import { POST_LOGIN } from  '../config';
 import { POST_REGISTER } from  '../config';
 
-export default function Contact() {
+export default function Contact({ setUser }) {
   const [ view, setView ] = useState(false);
   const { register, handleSubmit, errors, reset } = useForm();
   const history = useHistory();
@@ -15,8 +15,8 @@ export default function Contact() {
     axios 
       .post(POST_LOGIN, data)
         .then(res => {
-          console.log(res.data);
           window.localStorage.setItem('token', res.data.token);
+          setUser({ id: res.data.id, name: res.data.name })
           history.push('/calendar');
         })
         .catch(error => {
@@ -30,8 +30,8 @@ export default function Contact() {
     axios 
       .post(POST_REGISTER, data)
         .then(res => {
-          console.log(res.data);
           window.localStorage.setItem('token', res.data.token);
+          setUser({ id: res.data.id, name: res.data.name })
           history.push('/calendar');
         })
         .catch(error => {

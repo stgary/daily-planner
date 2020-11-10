@@ -12,8 +12,8 @@ router.post('/', (req, res) => {
     });
 });
 
-router.get('/', (req, res) => {
-  db.get()
+router.get('/:id', (req, res) => {
+  db.getById(req.params.id)
     .then(dbRes => {
       res.status(200).json(dbRes);
     })
