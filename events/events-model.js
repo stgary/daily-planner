@@ -22,10 +22,9 @@ function get() {
   return db('events');
 }
 
-function getById(id) {
+function getById(user_id) {
   return db('events')
-    .where({ id })
-    .first();
+    .where({ user_id: user_id });
 }
 
 function remove(id) {

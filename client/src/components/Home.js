@@ -3,7 +3,7 @@ import { useHistory } from 'react-router-dom';
 
 import Sign from './Sign';
 
-export default function Home() {
+export default function Home({ setUser }) {
   const history = useHistory();
 
   return (
@@ -27,7 +27,7 @@ export default function Home() {
             <p className='p7'>First create an account then build an itinerary.</p>
           </div>
           <div className='wrapper'>
-            <Sign />
+            <Sign setUser={setUser} />
           </div>
         </div>
       </div>

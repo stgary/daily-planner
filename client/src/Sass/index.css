@@ -894,7 +894,7 @@ html, body {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  background-color: #f0f7f4;
+  background-color: #f0edee;
   width: 100%;
   height: 100%;
   min-height: 100vh;
@@ -914,64 +914,118 @@ html, body {
   width: 100%;
 }
 
-.cal {
+.calendar {
+  height: 96vh;
+  width: 100%;
+}
+
+.calendar header {
+  height: 4vh;
+}
+
+.calendar header nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.calendar header nav .isUser span {
+  font-size: 3rem;
+  font-family: "Source Sans Pro", sans-serif;
+  color: #b1b1b1;
+  margin: 10px;
+}
+
+.calendar header nav .isUser button {
+  width: 115px;
+  height: 4vh;
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 1.75rem;
+  font-weight: 600;
+  background: #f3f0f1;
+  position: relative;
+  margin: 10px 6px 10px 0px;
+  border-radius: 20px;
+  text-align: center;
+  cursor: pointer;
+  -webkit-transition: all 0.1s ease-in-out;
+  transition: all 0.1s ease-in-out;
+  -webkit-box-shadow: 2px 3px 12px 0px #726f6f80, inset 8px 8px 16px #87878763;
+          box-shadow: 2px 3px 12px 0px #726f6f80, inset 8px 8px 16px #87878763;
+  color: #b1b1b1;
+  outline: none;
+  border: 1px solid #b1b1b1;
+}
+
+.calendar header nav .isUser button:hover {
+  opacity: 1;
+  -webkit-box-shadow: -2px -2px 6px rgba(18, 66, 62, 0.123), 2px 2px 6px rgba(11, 109, 63, 0.123);
+          box-shadow: -2px -2px 6px rgba(18, 66, 62, 0.123), 2px 2px 6px rgba(11, 109, 63, 0.123);
+}
+
+.calendar header nav .isUser button:active {
+  opacity: 1;
+  -webkit-box-shadow: inset -4px -4px 8px rgba(255, 255, 255, 0.5), inset 8px 8px 16px rgba(0, 0, 0, 0.1);
+          box-shadow: inset -4px -4px 8px rgba(255, 255, 255, 0.5), inset 8px 8px 16px rgba(0, 0, 0, 0.1);
+  border: none;
+}
+
+.calendar .cal-outer-container {
   height: 100%;
   width: 100%;
 }
 
-.cal .cal-outer-container {
+.calendar .cal-outer-container .cal-inner-container {
   height: 100%;
   width: 100%;
 }
 
-.cal .cal-outer-container .cal-inner-container {
-  height: 100%;
-  width: 100%;
-}
-
-.cal .cal-outer-container .cal-inner-container .rbc-header {
+.calendar .cal-outer-container .cal-inner-container .rbc-header {
   font-size: 2.25rem;
   font-weight: 500;
   font-family: "Source Sans Pro", sans-serif;
 }
 
-.cal .cal-outer-container .cal-inner-container .rbc-month-header {
+.calendar .cal-outer-container .cal-inner-container .rbc-month-header {
   background-color: #23524b85;
   color: #f0f7f4;
   font-family: "Source Sans Pro", sans-serif;
   height: 5vh;
 }
 
-.cal .cal-outer-container .cal-inner-container .rbc-date-cell {
+.calendar .cal-outer-container .cal-inner-container .rbc-date-cell {
   font-size: 1.5rem;
   color: #b1b1b1;
 }
 
-.cal .cal-outer-container .cal-inner-container .rbc-toolbar-label {
+.calendar .cal-outer-container .cal-inner-container .rbc-toolbar-label {
   font-size: 3.25rem;
   font-family: "Source Sans Pro", sans-serif;
   color: #b1b1b1a8;
 }
 
-.cal .cal-outer-container .cal-inner-container .rbc-toolbar {
+.calendar .cal-outer-container .cal-inner-container .rbc-toolbar {
   margin: 0;
 }
 
-.cal .cal-outer-container .cal-inner-container .rbc-btn-group {
+.calendar .cal-outer-container .cal-inner-container .rbc-btn-group {
   margin: 0px 10px 0px 10px;
 }
 
-.cal .cal-outer-container .cal-inner-container .rbc-current-time-indicator {
+.calendar .cal-outer-container .cal-inner-container .rbc-current-time-indicator {
   height: 2px;
   background-color: #a8a8a8;
   pointer-events: none;
 }
 
-.cal .cal-outer-container .cal-inner-container .rbc-events-container {
+.calendar .cal-outer-container .cal-inner-container .rbc-events-container {
   margin-right: 0px;
 }
 
-.cal .cal-outer-container .cal-inner-container .rbc-event {
+.calendar .cal-outer-container .cal-inner-container .rbc-event {
   background-color: #7b90749e;
   font-size: 1.25rem;
   color: #f0f7f4;
@@ -980,7 +1034,7 @@ html, body {
   width: 100%;
 }
 
-.cal .cal-outer-container .cal-inner-container .rbc-event-label {
+.calendar .cal-outer-container .cal-inner-container .rbc-event-label {
   font-size: 1.25rem;
   width: 100%;
   display: -webkit-box;
@@ -994,7 +1048,7 @@ html, body {
           align-items: center;
 }
 
-.cal .cal-outer-container .cal-inner-container .rbc-event-content {
+.calendar .cal-outer-container .cal-inner-container .rbc-event-content {
   font-size: 1.5rem;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1007,36 +1061,36 @@ html, body {
           align-items: center;
 }
 
-.cal .cal-outer-container .cal-inner-container .rbc-time-header-cell {
+.calendar .cal-outer-container .cal-inner-container .rbc-time-header-cell {
   height: 6vh;
   font-size: 1.25rem;
   color: #f0f7f4;
   background-color: #23524b85;
 }
 
-.cal .cal-outer-container .cal-inner-container .rbc-today {
+.calendar .cal-outer-container .cal-inner-container .rbc-today {
   color: #b1b1b1;
 }
 
-.cal .cal-outer-container .cal-inner-container .rbc-time-header-gutter {
+.calendar .cal-outer-container .cal-inner-container .rbc-time-header-gutter {
   background-color: #23524b85;
 }
 
-.cal .cal-outer-container .cal-inner-container .rbc-time-gutter {
+.calendar .cal-outer-container .cal-inner-container .rbc-time-gutter {
   font-size: 1.25rem;
   font-family: "Source Sans Pro", sans-serif;
   color: #f0f7f4;
   background-color: #23524b85;
 }
 
-.cal .cal-outer-container .cal-inner-container .rbc-agenda-content {
+.calendar .cal-outer-container .cal-inner-container .rbc-agenda-content {
   width: 100%;
   font-size: 2rem;
   font-family: "Source Sans Pro", sans-serif;
   font-weight: 200;
 }
 
-.cal .cal-outer-container .cal-inner-container .rbc-agenda-empty {
+.calendar .cal-outer-container .cal-inner-container .rbc-agenda-empty {
   font-size: 3rem;
   margin-left: 15px;
   font-family: "Source Sans Pro", sans-serif;
@@ -1044,11 +1098,11 @@ html, body {
   color: #b1b1b1a8;
 }
 
-.cal .cal-outer-container .cal-inner-container .rbc-agenda-table {
+.calendar .cal-outer-container .cal-inner-container .rbc-agenda-table {
   color: #b1b1b1;
 }
 
-.cal .cal-outer-container .cal-inner-container button {
+.calendar .cal-outer-container .cal-inner-container button {
   width: 115px;
   height: 4vh;
   font-family: "Source Sans Pro", sans-serif;
@@ -1066,20 +1120,20 @@ html, body {
   outline: none;
 }
 
-.cal .cal-outer-container .cal-inner-container button:hover {
+.calendar .cal-outer-container .cal-inner-container button:hover {
   opacity: 1;
   -webkit-box-shadow: -6px -6px 10px rgba(255, 255, 255, 0.8), 6px 6px 10px rgba(0, 0, 0, 0.2);
           box-shadow: -6px -6px 10px rgba(255, 255, 255, 0.8), 6px 6px 10px rgba(0, 0, 0, 0.2);
 }
 
-.cal .cal-outer-container .cal-inner-container button:active {
+.calendar .cal-outer-container .cal-inner-container button:active {
   opacity: 1;
   -webkit-box-shadow: inset -4px -4px 8px rgba(255, 255, 255, 0.5), inset 8px 8px 16px rgba(0, 0, 0, 0.1);
           box-shadow: inset -4px -4px 8px rgba(255, 255, 255, 0.5), inset 8px 8px 16px rgba(0, 0, 0, 0.1);
   border: none;
 }
 
-.cal .cal-outer-container .cal-inner-container button span {
+.calendar .cal-outer-container .cal-inner-container button span {
   line-height: 100px;
   font-size: 32px;
   font-weight: semibold;
@@ -1104,9 +1158,9 @@ html, body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -1116,7 +1170,7 @@ html, body {
   font-size: 3rem;
   font-weight: 700;
   font-family: "Source Sans Pro", sans-serif;
-  margin: 1% 1% 0% 1%;
+  margin: 1%;
   color: #f0f7f4;
 }
 
@@ -1165,13 +1219,10 @@ html, body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   height: 100%;
-  background-image: url("../img/cal3.jpg");
-  background-position: left;
-  background-repeat: no-repeat;
 }
 
 .home .info-form-container .kti {
@@ -1193,7 +1244,7 @@ html, body {
 
 .home .info-form-container .info-form-wrapper {
   width: 60%;
-  margin: -1% 2% 4% 0%;
+  margin: -1% 2% 1% 0%;
 }
 
 .home .info-form-container .info-form-wrapper .wrapper {
