@@ -32,10 +32,11 @@
         box-shadow: inset 0px 0px 20px 0px #042b1f3f, 0px 9px 6px 6px #0000001a;
       }
 
-      &:active {
+      &:focus {
         opacity: 1;
-        box-shadow: inset -4px -4px 8px rgba(255, 255, 255, 0.212),
-                    inset 8px 8px 16px rgba(0, 0, 0, 0.1);
+        background-color: #23524b7a;
+        color: $MintCream;
+        box-shadow: inset 0px 0px 20px 0px #042b1f3f, 0px 9px 6px 6px #0000001a;
         border: none;
       }
     }

@@ -3,7 +3,6 @@ import { Route } from 'react-router-dom';
 
 import Home from './Home';
 import Calendar from './Calendar'
-// import PrivateRoute from './PrivateRoute';
 
 function App() {
   const [user, setUser] = useState(false)

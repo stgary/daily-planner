@@ -114,11 +114,7 @@ button.rbc-input::-moz-focus-inner {
 }
 
 .rbc-today {
-  background-color: #e6e6e6;
-}
-
-.rbc-event-label {
-  font-size: 1.75rem;
+  background-color: #eaf6ff;
 }
 
 .rbc-toolbar {
@@ -243,7 +239,7 @@ button.rbc-input::-moz-focus-inner {
   border-radius: 5px;
   color: #fff;
   cursor: pointer;
-  width: 104%;
+  width: 100%;
   text-align: left;
 }
 
@@ -1320,10 +1316,12 @@ html, body {
           box-shadow: inset 0px 0px 20px 0px #042b1f3f, 0px 9px 6px 6px #0000001a;
 }
 
-.sign .tabs .tab:active {
+.sign .tabs .tab:focus {
   opacity: 1;
-  -webkit-box-shadow: inset -4px -4px 8px rgba(255, 255, 255, 0.212), inset 8px 8px 16px rgba(0, 0, 0, 0.1);
-          box-shadow: inset -4px -4px 8px rgba(255, 255, 255, 0.212), inset 8px 8px 16px rgba(0, 0, 0, 0.1);
+  background-color: #23524b7a;
+  color: #f0f7f4;
+  -webkit-box-shadow: inset 0px 0px 20px 0px #042b1f3f, 0px 9px 6px 6px #0000001a;
+          box-shadow: inset 0px 0px 20px 0px #042b1f3f, 0px 9px 6px 6px #0000001a;
   border: none;
 }
 
