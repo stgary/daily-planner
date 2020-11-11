@@ -8,8 +8,8 @@ export default function Contact({ setUser }) {
   const { register, handleSubmit, errors, reset } = useForm();
   const history = useHistory();
 
-  const POST_LOGIN = 'https://dayplans.herokuapp.com/auth/login';
-  const POST_REGISTER = 'https://dayplans.herokuapp.com/auth/register';
+  const POST_LOGIN = 'http://dayplans.herokuapp.com/auth/login';
+  const POST_REGISTER = 'http://dayplans.herokuapp.com/auth/register';
   
   const onLogin = data => {
     axios 
