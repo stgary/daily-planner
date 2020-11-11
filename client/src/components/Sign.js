@@ -22,6 +22,9 @@ export default function Contact({ setUser }) {
           history.push('/calendar');
         })
         .catch(error => {
+          if(error) {
+            window.alert('You have yet to register or your username and password is incorrect')
+          }
           console.log(error.message);
         });
 
