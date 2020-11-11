@@ -3,19 +3,21 @@ import { useForm } from 'react-hook-form';
 import { useHistory } from 'react-router-dom';
 import axios from 'axios';
 
-import { POST_LOGIN } from  '../config';
-import { POST_REGISTER } from  '../config';
-
 export default function Contact({ setUser }) {
   const [ view, setView ] = useState(false);
   const { register, handleSubmit, errors, reset } = useForm();
   const history = useHistory();
+
+  const POST_LOGIN = 'https://dayplans.herokuapp.com/auth/login';
+  const POST_REGISTER = 'https://dayplans.herokuapp.com/auth/register';
   
   const onLogin = data => {
     axios 
       .post(POST_LOGIN, data)
         .then(res => {
           window.localStorage.setItem('token', res.data.token);
+          window.localStorage.setItem('id', res.data.id);
+          window.localStorage.setItem('name', res.data.name);
           setUser({ id: res.data.id, name: res.data.name })
           history.push('/calendar');
         })
@@ -31,6 +33,8 @@ export default function Contact({ setUser }) {
       .post(POST_REGISTER, data)
         .then(res => {
           window.localStorage.setItem('token', res.data.token);
+          window.localStorage.setItem('id', res.data.id);
+          window.localStorage.setItem('name', res.data.name);
           setUser({ id: res.data.id, name: res.data.name })
           history.push('/calendar');
         })
