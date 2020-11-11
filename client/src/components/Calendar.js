@@ -11,8 +11,8 @@ export default function Cal({ user, setUser }) {
   const [events, setEvents] = useState([]);
   const history = useHistory();
 
-  const POST_EVENT = 'http://dayplans.herokuapp.com/events';
-  const GET_EVENTS = `http://dayplans.herokuapp.com/events/${user.id}`;
+  const POST_EVENT = 'https://dayplans.herokuapp.com/events';
+  const GET_EVENTS = `https://dayplans.herokuapp.com/events/${user.id}`;
 
   useEffect(() => {
       axios
