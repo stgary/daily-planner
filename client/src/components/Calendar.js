@@ -56,7 +56,7 @@ export default function Cal({ user, setUser }) {
 
     if(remove === true) {
       axios 
-        .delete(`http://localhost:5000/events/${e.id}`)
+        .delete(`https://dayplans.herokuapp.com/events/${e.id}`)
         .then(res => {
           console.log(res.data);
         })
