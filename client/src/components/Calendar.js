@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from 'react';
+import { useHistory } from 'react-router-dom';
 import { Calendar, momentLocalizer } from "react-big-calendar";
 import moment from "moment";
 import axios from 'axios';
-import { useHistory } from 'react-router-dom';
 
 const localizer = momentLocalizer(moment);
 const views = {month: true, week: true, agenda: true}
