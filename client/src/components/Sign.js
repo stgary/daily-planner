@@ -3,13 +3,13 @@ import { useForm } from 'react-hook-form';
 import { useHistory } from 'react-router-dom';
 import axios from 'axios';
 
-import { POST_LOGIN } from  '../config';
-import { POST_REGISTER } from  '../config';
-
 export default function Contact({ setUser }) {
   const [ view, setView ] = useState(false);
   const { register, handleSubmit, errors, reset } = useForm();
   const history = useHistory();
+
+  const POST_LOGIN = 'https://dayplans.herokuapp.com/auth/login';
+  const POST_REGISTER = 'https://dayplans.herokuapp.com/auth/register';
   
   const onLogin = data => {
     axios 

@@ -2,7 +2,7 @@ const { DB_USER, DB_PASS, DATABASE } = require('./config');
 
 module.exports = {
 
-  production: {
+  development: {
     useNullAsDefault: true,
     client: 'sqlite3',
     connection: {
@@ -32,7 +32,7 @@ module.exports = {
     },
   },
 
-  development: {
+  production: {
     client: 'postgresql',
     useNullAsDefault: true,
     connection: {
